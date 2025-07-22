@@ -1,0 +1,36 @@
+.sidebar {
+  width: 220px;
+  background-color: #0770d9;
+  color: white;
+  height: 100vh; /* full viewport height */
+  padding: 20px;
+  position: fixed; /* keep sidebar fixed */
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+  text-decoration: underline;
+}
+
+.main-content {
+  margin-left: 220px; /* same as sidebar width */
+}
