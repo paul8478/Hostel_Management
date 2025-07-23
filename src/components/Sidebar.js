@@ -10,7 +10,11 @@ const Sidebar = () => {
         <ul>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/students">Students</Link></li>
-          <li><Link to="/add-student">Add Student</Link></li>
+          <li><Link to="/Principals">Principal</Link></li>
+                    <li><Link to="/Hostels">Hostel</Link></li>
+          <li><Link to="/Colleges">Colleges</Link></li>
+          <li><Link to="/Admins">Admins</Link></li>
+
           {/* Add more links as needed */}
         </ul>
       </nav>

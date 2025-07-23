@@ -3,6 +3,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Sidebar from './components/Sidebar';
 import StudentList from './components/StudentList';
+import Principal from './components/Principal';
+import Hostel from './components/Hostel';
+import College from './components/College';
+import Admin from './components/Admin';
+
 // import other pages/components like AddStudent etc.
 
 function App() {
@@ -14,6 +19,12 @@ function App() {
           <Routes>
             <Route path="/" element={<h1>Welcome Home</h1>} />
             <Route path="/students" element={<StudentList />} />
+            <Route path="/principals" element={<Principal />} />
+            <Route path="/hostels" element={<Hostel />} />
+            <Route path="/colleges" element={<College />} />
+            <Route path="/admins" element={<Admin />} />
+
+
             {/* Add other routes here */}
           </Routes>
         </div>
