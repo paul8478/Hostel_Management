@@ -20,7 +20,7 @@ const Admin = () => {
 
   return (
     <div className="box">
-      <h1>Admin Data</h1>
+      <h1>Admin Data</h1> <a href='/addadmin'><button>Add Admin</button></a>
       {error && <p style={{ color: 'red' }}>{error}</p>}
       <table className="student-table">
         <thead>
