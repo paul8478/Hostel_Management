@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { getAllStudents, createStudent } from '../services/studentService';
+import { useNavigate } from 'react-router-dom'; // this for navigating to another page
+
 import '../css/sidebar.css';
 import '../css/student.css';
 
@@ -18,6 +20,8 @@ const StudentList = () => {
 
   const [search, setSearch] = useState('');
   const [filteredStudents, setFilteredStudents] = useState([]);
+
+  const navigate = useNavigate();// this is for navigating to another page
 
   useEffect(() => {
     fetchStudents();
@@ -103,11 +107,12 @@ const StudentList = () => {
       <table className="student-table">
         <thead>
           <tr>
+            <th>ID</th>
             <th>Name</th>
-            <th>Roll Number</th>
+            <th>Roll </th>
             <th>Email</th>
             <th>Address</th>
-            <th>College ID</th>
+            <th>Colg ID</th>
             <th>College Name</th>
             <th>Actions</th>
           </tr>
@@ -116,6 +121,8 @@ const StudentList = () => {
           {filteredStudents.length > 0 ? (
             filteredStudents.map(student => (
               <tr key={student.id}>
+                                <td>{student.id}</td>
+
                 <td>{student.name}</td>
                 <td>{student.rollnumber}</td>
                 <td>{student.email}</td>
@@ -123,7 +130,7 @@ const StudentList = () => {
                 <td>{student.colgid}</td>
                 <td>{student.college?.colgname || 'N/A'}</td>
                 <td>
-                  <button>Edit</button>
+                  <button onClick={() => navigate(`/student/edit/${student.id}`)}>Edit</button>
                   <button>Delete</button>
                 </td>
               </tr>

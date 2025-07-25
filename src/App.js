@@ -7,6 +7,7 @@ import Principal from './components/Principal';
 import Hostel from './components/Hostel';
 import College from './components/College';
 import Admin from './components/Admin';
+import StudentEdit from './components/StudentEdit';
 // import other pages/components like AddStudent etc.
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
             <Route path="/hostels" element={<Hostel />} />
             <Route path="/colleges" element={<College />} />
             <Route path="/admins" element={<Admin />} />
+            <Route path="/student/edit/:id" element={<StudentEdit />} />
 
 
 

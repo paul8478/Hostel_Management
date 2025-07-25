@@ -1,6 +1,6 @@
 .sidebar {
   width: 220px;
-  background-color: #0770d9;
+  background-color: #022548;
   color: white;
   height: 100vh; /* full viewport height */
   padding: 20px;
@@ -19,17 +19,18 @@
 
 .sidebar ul li {
   margin-bottom: 20px;
+  padding: 10px;
 }
 
 .sidebar ul li a {
   color: white;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 21px;
+  font-weight: bold;
 }
 
 .sidebar ul li a:hover {
-  text-decoration: underline;
-}
+color: #81c8f1;}
 
 .main-content {
   margin-left: 220px; /* same as sidebar width */

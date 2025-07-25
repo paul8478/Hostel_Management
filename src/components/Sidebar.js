@@ -5,15 +5,15 @@ import '../css/sidebar.css'; // Assuming you have a CSS file for styling
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <h2>DASHBOARD</h2>
+      <h2>DASHB⚡ARD</h2>
       <nav>
         <ul>
           <li><Link to="/">Home</Link></li>
-          <li><Link to="/students">Students</Link></li>
-          <li><Link to="/Principals">Principal</Link></li>
-                    <li><Link to="/Hostels">Hostel</Link></li>
-          <li><Link to="/Colleges">Colleges</Link></li>
-          <li><Link to="/Admins">Admins</Link></li>
+          <li><Link to="/students">Students Data</Link></li>
+          <li><Link to="/principals">Principal Data</Link></li>
+          <li><Link to="/hostels">Hostel Data</Link></li>
+          <li><Link to="/colleges">Colleges Data</Link></li>
+          <li><Link to="/admins">Admins Data</Link></li>
 
           {/* Add more links as needed */}
         </ul>
